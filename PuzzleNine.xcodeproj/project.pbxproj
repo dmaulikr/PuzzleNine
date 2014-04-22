@@ -1,0 +1,472 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3240DE4019062C300037CDF2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3240DE3F19062C300037CDF2 /* Foundation.framework */; };
+		3240DE4219062C300037CDF2 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3240DE4119062C300037CDF2 /* CoreGraphics.framework */; };
+		3240DE4419062C300037CDF2 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3240DE4319062C300037CDF2 /* UIKit.framework */; };
+		3240DE4A19062C300037CDF2 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3240DE4819062C300037CDF2 /* InfoPlist.strings */; };
+		3240DE4C19062C300037CDF2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3240DE4B19062C300037CDF2 /* main.m */; };
+		3240DE5019062C300037CDF2 /* PuzzleNineAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3240DE4F19062C300037CDF2 /* PuzzleNineAppDelegate.m */; };
+		3240DE5319062C300037CDF2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3240DE5119062C300037CDF2 /* Main.storyboard */; };
+		3240DE5619062C300037CDF2 /* PuzzleNineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3240DE5519062C300037CDF2 /* PuzzleNineViewController.m */; };
+		3240DE5819062C300037CDF2 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3240DE5719062C300037CDF2 /* Images.xcassets */; };
+		3240DE5F19062C300037CDF2 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3240DE5E19062C300037CDF2 /* XCTest.framework */; };
+		3240DE6019062C300037CDF2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3240DE3F19062C300037CDF2 /* Foundation.framework */; };
+		3240DE6119062C300037CDF2 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3240DE4319062C300037CDF2 /* UIKit.framework */; };
+		3240DE6919062C300037CDF2 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3240DE6719062C300037CDF2 /* InfoPlist.strings */; };
+		3240DE6B19062C300037CDF2 /* PuzzleNineTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3240DE6A19062C300037CDF2 /* PuzzleNineTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3240DE6219062C300037CDF2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3240DE3419062C300037CDF2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3240DE3B19062C300037CDF2;
+			remoteInfo = PuzzleNine;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3240DE3C19062C300037CDF2 /* PuzzleNine.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PuzzleNine.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3240DE3F19062C300037CDF2 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		3240DE4119062C300037CDF2 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		3240DE4319062C300037CDF2 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		3240DE4719062C300037CDF2 /* PuzzleNine-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PuzzleNine-Info.plist"; sourceTree = "<group>"; };
+		3240DE4919062C300037CDF2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		3240DE4B19062C300037CDF2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		3240DE4D19062C300037CDF2 /* PuzzleNine-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PuzzleNine-Prefix.pch"; sourceTree = "<group>"; };
+		3240DE4E19062C300037CDF2 /* PuzzleNineAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PuzzleNineAppDelegate.h; sourceTree = "<group>"; };
+		3240DE4F19062C300037CDF2 /* PuzzleNineAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PuzzleNineAppDelegate.m; sourceTree = "<group>"; };
+		3240DE5219062C300037CDF2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3240DE5419062C300037CDF2 /* PuzzleNineViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PuzzleNineViewController.h; sourceTree = "<group>"; };
+		3240DE5519062C300037CDF2 /* PuzzleNineViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PuzzleNineViewController.m; sourceTree = "<group>"; };
+		3240DE5719062C300037CDF2 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		3240DE5D19062C300037CDF2 /* PuzzleNineTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PuzzleNineTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3240DE5E19062C300037CDF2 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		3240DE6619062C300037CDF2 /* PuzzleNineTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PuzzleNineTests-Info.plist"; sourceTree = "<group>"; };
+		3240DE6819062C300037CDF2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		3240DE6A19062C300037CDF2 /* PuzzleNineTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PuzzleNineTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3240DE3919062C300037CDF2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3240DE4219062C300037CDF2 /* CoreGraphics.framework in Frameworks */,
+				3240DE4419062C300037CDF2 /* UIKit.framework in Frameworks */,
+				3240DE4019062C300037CDF2 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3240DE5A19062C300037CDF2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3240DE5F19062C300037CDF2 /* XCTest.framework in Frameworks */,
+				3240DE6119062C300037CDF2 /* UIKit.framework in Frameworks */,
+				3240DE6019062C300037CDF2 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3240DE3319062C300037CDF2 = {
+			isa = PBXGroup;
+			children = (
+				3240DE4519062C300037CDF2 /* PuzzleNine */,
+				3240DE6419062C300037CDF2 /* PuzzleNineTests */,
+				3240DE3E19062C300037CDF2 /* Frameworks */,
+				3240DE3D19062C300037CDF2 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3240DE3D19062C300037CDF2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3240DE3C19062C300037CDF2 /* PuzzleNine.app */,
+				3240DE5D19062C300037CDF2 /* PuzzleNineTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3240DE3E19062C300037CDF2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3240DE3F19062C300037CDF2 /* Foundation.framework */,
+				3240DE4119062C300037CDF2 /* CoreGraphics.framework */,
+				3240DE4319062C300037CDF2 /* UIKit.framework */,
+				3240DE5E19062C300037CDF2 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3240DE4519062C300037CDF2 /* PuzzleNine */ = {
+			isa = PBXGroup;
+			children = (
+				3240DE4E19062C300037CDF2 /* PuzzleNineAppDelegate.h */,
+				3240DE4F19062C300037CDF2 /* PuzzleNineAppDelegate.m */,
+				3240DE5119062C300037CDF2 /* Main.storyboard */,
+				3240DE5419062C300037CDF2 /* PuzzleNineViewController.h */,
+				3240DE5519062C300037CDF2 /* PuzzleNineViewController.m */,
+				3240DE5719062C300037CDF2 /* Images.xcassets */,
+				3240DE4619062C300037CDF2 /* Supporting Files */,
+			);
+			path = PuzzleNine;
+			sourceTree = "<group>";
+		};
+		3240DE4619062C300037CDF2 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3240DE4719062C300037CDF2 /* PuzzleNine-Info.plist */,
+				3240DE4819062C300037CDF2 /* InfoPlist.strings */,
+				3240DE4B19062C300037CDF2 /* main.m */,
+				3240DE4D19062C300037CDF2 /* PuzzleNine-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3240DE6419062C300037CDF2 /* PuzzleNineTests */ = {
+			isa = PBXGroup;
+			children = (
+				3240DE6A19062C300037CDF2 /* PuzzleNineTests.m */,
+				3240DE6519062C300037CDF2 /* Supporting Files */,
+			);
+			path = PuzzleNineTests;
+			sourceTree = "<group>";
+		};
+		3240DE6519062C300037CDF2 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3240DE6619062C300037CDF2 /* PuzzleNineTests-Info.plist */,
+				3240DE6719062C300037CDF2 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3240DE3B19062C300037CDF2 /* PuzzleNine */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3240DE6E19062C300037CDF2 /* Build configuration list for PBXNativeTarget "PuzzleNine" */;
+			buildPhases = (
+				3240DE3819062C300037CDF2 /* Sources */,
+				3240DE3919062C300037CDF2 /* Frameworks */,
+				3240DE3A19062C300037CDF2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PuzzleNine;
+			productName = PuzzleNine;
+			productReference = 3240DE3C19062C300037CDF2 /* PuzzleNine.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3240DE5C19062C300037CDF2 /* PuzzleNineTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3240DE7119062C300037CDF2 /* Build configuration list for PBXNativeTarget "PuzzleNineTests" */;
+			buildPhases = (
+				3240DE5919062C300037CDF2 /* Sources */,
+				3240DE5A19062C300037CDF2 /* Frameworks */,
+				3240DE5B19062C300037CDF2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3240DE6319062C300037CDF2 /* PBXTargetDependency */,
+			);
+			name = PuzzleNineTests;
+			productName = PuzzleNineTests;
+			productReference = 3240DE5D19062C300037CDF2 /* PuzzleNineTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3240DE3419062C300037CDF2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = PuzzleNine;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "Jyothidhar Pulakunta";
+				TargetAttributes = {
+					3240DE5C19062C300037CDF2 = {
+						TestTargetID = 3240DE3B19062C300037CDF2;
+					};
+				};
+			};
+			buildConfigurationList = 3240DE3719062C300037CDF2 /* Build configuration list for PBXProject "PuzzleNine" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3240DE3319062C300037CDF2;
+			productRefGroup = 3240DE3D19062C300037CDF2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3240DE3B19062C300037CDF2 /* PuzzleNine */,
+				3240DE5C19062C300037CDF2 /* PuzzleNineTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3240DE3A19062C300037CDF2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3240DE5819062C300037CDF2 /* Images.xcassets in Resources */,
+				3240DE4A19062C300037CDF2 /* InfoPlist.strings in Resources */,
+				3240DE5319062C300037CDF2 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3240DE5B19062C300037CDF2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3240DE6919062C300037CDF2 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3240DE3819062C300037CDF2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3240DE5019062C300037CDF2 /* PuzzleNineAppDelegate.m in Sources */,
+				3240DE5619062C300037CDF2 /* PuzzleNineViewController.m in Sources */,
+				3240DE4C19062C300037CDF2 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3240DE5919062C300037CDF2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3240DE6B19062C300037CDF2 /* PuzzleNineTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3240DE6319062C300037CDF2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3240DE3B19062C300037CDF2 /* PuzzleNine */;
+			targetProxy = 3240DE6219062C300037CDF2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3240DE4819062C300037CDF2 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3240DE4919062C300037CDF2 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		3240DE5119062C300037CDF2 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3240DE5219062C300037CDF2 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		3240DE6719062C300037CDF2 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3240DE6819062C300037CDF2 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3240DE6C19062C300037CDF2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		3240DE6D19062C300037CDF2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3240DE6F19062C300037CDF2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PuzzleNine/PuzzleNine-Prefix.pch";
+				INFOPLIST_FILE = "PuzzleNine/PuzzleNine-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		3240DE7019062C300037CDF2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PuzzleNine/PuzzleNine-Prefix.pch";
+				INFOPLIST_FILE = "PuzzleNine/PuzzleNine-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		3240DE7219062C300037CDF2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/PuzzleNine.app/PuzzleNine";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PuzzleNine/PuzzleNine-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "PuzzleNineTests/PuzzleNineTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		3240DE7319062C300037CDF2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/PuzzleNine.app/PuzzleNine";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PuzzleNine/PuzzleNine-Prefix.pch";
+				INFOPLIST_FILE = "PuzzleNineTests/PuzzleNineTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3240DE3719062C300037CDF2 /* Build configuration list for PBXProject "PuzzleNine" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3240DE6C19062C300037CDF2 /* Debug */,
+				3240DE6D19062C300037CDF2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3240DE6E19062C300037CDF2 /* Build configuration list for PBXNativeTarget "PuzzleNine" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3240DE6F19062C300037CDF2 /* Debug */,
+				3240DE7019062C300037CDF2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		3240DE7119062C300037CDF2 /* Build configuration list for PBXNativeTarget "PuzzleNineTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3240DE7219062C300037CDF2 /* Debug */,
+				3240DE7319062C300037CDF2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3240DE3419062C300037CDF2 /* Project object */;
+}
