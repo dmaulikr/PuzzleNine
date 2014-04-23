@@ -28,12 +28,25 @@ const int NumTiles = 9;
 }
 
 -(NSDictionary *) positionForTiles:(float) x y:(float)y side:(float)side spacing:(float)space {
+	NSMutableArray *positions = [self generatePositions:x y:y side:side spacing:space];
+	for (int i=0; i<NumTiles; i++) {
+		int selIndex = arc4random() % [positions count];
+		NSValue *selPos = [positions objectAtIndex:selIndex];
+		[_tilePositions setObject:selPos forKey:[NSNumber numberWithInt:i]];
+		
+		[positions removeObjectAtIndex:selIndex];
+	}
+	return _tilePositions;
+}
+
+-(NSMutableArray *) generatePositions:(float) x y:(float)y side:(float)side spacing:(float)space {
+	NSMutableArray *generatedPos = [[NSMutableArray alloc] initWithCapacity:NumTiles];
 	float X = x;
 	float Y = y;
 	
 	for (int i=0; i<NumTiles; i++) {
 		CGRect rect = CGRectMake(X, Y, side, side);
-		[_tilePositions setObject:[NSValue valueWithCGRect:rect] forKey:[NSNumber numberWithInt:i]];
+		[generatedPos addObject:[NSValue valueWithCGRect:rect]];
 		if ((i+1) % 3 == 0) {
 			Y += side + space;
 			X = x;
@@ -41,7 +54,7 @@ const int NumTiles = 9;
 			X += side + space;
 		}
 	}
-	return _tilePositions;
+	return generatedPos;
 }
 
 -(BOOL) isValidMove:(NSNumber *) rectNum space:(float) space{
