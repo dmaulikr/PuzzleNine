@@ -42,7 +42,7 @@ const int Space = 10;
 		} else {
 			view.backgroundColor = [UIColor greenColor];
 			
-			UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(20, 20, 30, 30)];
+			UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(25, 15, 30, 30)];
 			label.text = [NSString stringWithFormat:@"%d", i+1];
 			[view addSubview:label];
 			
