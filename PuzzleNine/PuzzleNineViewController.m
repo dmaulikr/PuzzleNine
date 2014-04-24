@@ -15,7 +15,6 @@ const int StartY = 100;
 const int Space = 10;
 
 @interface PuzzleNineViewController ()
-@property (nonatomic, strong) NSMutableDictionary *positions;
 @property (nonatomic, strong) PuzzleNineModel *puzzleModel;
 @property (nonatomic, strong) UILabel *moves;
 @end
@@ -26,7 +25,6 @@ const int Space = 10;
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
-	_positions = [NSMutableDictionary dictionaryWithCapacity:10];
 	_puzzleModel = [PuzzleNineModel new];
 	_moves = [[UILabel alloc] initWithFrame:CGRectMake(200, 50, 50, 20)];
 	_moves.text = @"0";
