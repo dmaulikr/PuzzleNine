@@ -16,15 +16,13 @@ const int NumTiles = 9;
 
 @implementation PuzzleNineModel
 
-+(PuzzleNineModel *)sharedInstance {
-    static PuzzleNineModel *sharedInstance = nil;
-	static dispatch_once_t oncePredicate;
-    dispatch_once(&oncePredicate, ^{
-        sharedInstance = [[self alloc] init];
-		sharedInstance.tilePositions = [NSMutableDictionary dictionaryWithCapacity:NumTiles];
-    });
-	
-    return sharedInstance;
+-(id) init
+{
+    self = [super init];
+    if(self) {
+		_tilePositions = [NSMutableDictionary dictionaryWithCapacity:NumTiles];
+    }
+    return self;
 }
 
 -(NSDictionary *) positionForTiles:(float) x y:(float)y side:(float)side spacing:(float)space {

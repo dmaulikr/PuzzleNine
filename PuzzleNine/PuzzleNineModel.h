@@ -10,7 +10,6 @@
 
 @interface PuzzleNineModel : NSObject
 
-+(PuzzleNineModel *) sharedInstance;
 -(NSDictionary *) positionForTiles:(float) x y:(float)y side:(float)side spacing:(float)space;
 -(BOOL) isValidMove:(NSNumber *) rectNum space:(float) space;
 -(NSValue *) positionForTile:(NSNumber *)tileNumber;

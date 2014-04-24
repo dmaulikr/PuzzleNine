@@ -16,6 +16,7 @@ const int Space = 10;
 
 @interface PuzzleNineViewController ()
 @property (nonatomic, strong) NSMutableDictionary *positions;
+@property (nonatomic, strong) PuzzleNineModel *puzzleModel;
 @end
 
 @implementation PuzzleNineViewController
@@ -25,14 +26,16 @@ const int Space = 10;
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
 	_positions = [NSMutableDictionary dictionaryWithCapacity:10];
+	_puzzleModel = [PuzzleNineModel new];
+
 	[self placeViews];
 }
 
 -(void) placeViews {
-	NSDictionary *positions =[[PuzzleNineModel sharedInstance] positionForTiles:StartX
-																			  y:StartY
-																		   side:PuzzleSize
-																		spacing:Space];
+	NSDictionary *positions =[_puzzleModel positionForTiles:StartX
+														  y:StartY
+													   side:PuzzleSize
+													spacing:Space];
 	for (int i=[positions count]-2; i>=0; i--) {
 		NSValue *rect = [positions objectForKey:[NSNumber numberWithInt:i]];
 		UIView *view = [[UIView alloc] initWithFrame:[rect CGRectValue]];
@@ -61,16 +64,16 @@ const int Space = 10;
 - (void)handleGesture:(UIGestureRecognizer *)gestureRecognizer; {
 	if (gestureRecognizer.view.tag >= 1 && gestureRecognizer.view.tag <= 8) {
 		//Check if the view can animate
-		BOOL canAnimate = [[PuzzleNineModel sharedInstance] isValidMove:[NSNumber numberWithInt:gestureRecognizer.view.tag - 1]
-																  space:Space];
+		BOOL canAnimate = [_puzzleModel isValidMove:[NSNumber numberWithInt:gestureRecognizer.view.tag - 1]
+											  space:Space];
 		//Animate the view to the new position
 		if (canAnimate) {
 			[UIView animateWithDuration:1 animations:^{
-				NSValue *temp = [[PuzzleNineModel sharedInstance] positionForTile:[NSNumber numberWithInt:8]];
-				NSValue *oldValue = [[PuzzleNineModel sharedInstance] positionForTile:[NSNumber numberWithInt:gestureRecognizer.view.tag - 1]];
+				NSValue *temp = [_puzzleModel positionForTile:[NSNumber numberWithInt:8]];
+				NSValue *oldValue = [_puzzleModel positionForTile:[NSNumber numberWithInt:gestureRecognizer.view.tag - 1]];
 				
-				[[PuzzleNineModel sharedInstance] setPositionForTile:[NSNumber numberWithInt:gestureRecognizer.view.tag - 1] value:temp];
-				[[PuzzleNineModel sharedInstance] setPositionForTile:[NSNumber numberWithInt:8] value:oldValue];
+				[_puzzleModel setPositionForTile:[NSNumber numberWithInt:gestureRecognizer.view.tag - 1] value:temp];
+				[_puzzleModel setPositionForTile:[NSNumber numberWithInt:8] value:oldValue];
 				
 				gestureRecognizer.view.frame = [temp CGRectValue];
 			}];
@@ -78,8 +81,7 @@ const int Space = 10;
 	}
 }
 
-- (void)didReceiveMemoryWarning
-{
+- (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
