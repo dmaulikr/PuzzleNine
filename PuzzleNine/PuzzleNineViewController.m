@@ -17,6 +17,7 @@ const int Space = 10;
 @interface PuzzleNineViewController ()
 @property (nonatomic, strong) NSMutableDictionary *positions;
 @property (nonatomic, strong) PuzzleNineModel *puzzleModel;
+@property (nonatomic, strong) UILabel *moves;
 @end
 
 @implementation PuzzleNineViewController
@@ -27,6 +28,14 @@ const int Space = 10;
 	// Do any additional setup after loading the view, typically from a nib.
 	_positions = [NSMutableDictionary dictionaryWithCapacity:10];
 	_puzzleModel = [PuzzleNineModel new];
+	_moves = [[UILabel alloc] initWithFrame:CGRectMake(200, 50, 50, 20)];
+	_moves.text = @"0";
+
+	UILabel *numMoves = [[UILabel alloc] initWithFrame:CGRectMake(75, 50, 100, 20)];
+	numMoves.text = @"Moves";
+	[self.view addSubview:numMoves];
+
+	[self.view addSubview:_moves];
 
 	[self placeViews];
 }
@@ -76,9 +85,17 @@ const int Space = 10;
 				[_puzzleModel setPositionForTile:[NSNumber numberWithInt:8] value:oldValue];
 				
 				gestureRecognizer.view.frame = [temp CGRectValue];
+
+				//Update number of moves
+				[self updateNumMoves];
 			}];
 		}
 	}
+}
+
+-(void) updateNumMoves {
+	NSString *curMoves = _moves.text;
+	_moves.text = [NSString stringWithFormat:@"%d", ([curMoves intValue] + 1 )];
 }
 
 - (void)didReceiveMemoryWarning {
